@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style
+    </style>
+</head>
+<body>
+    <form name="forms">
+        <table>
+            <tr>
+                <input type="text"class="result" name="result" readonly>
+            </tr>
+            <tr>
+                <td><input type="button" value="C" onclick="document.forms.result.value=''"></td>
+                <td><input type="button" value="()" ></td>
+                <td><input type="button" value="%"  onclick="document.forms.result.value+='%'"></td>
+                <td><input type="button" value="/" onclick="document.forms.result.value+='/'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="document.forms.result.value+='7'"></td>
+                <td><input type="button" value="8" onclick="document.forms.result.value+='8'"></td>
+                <td><input type="button" value="9" onclick="document.forms.result.value+='9'"></td>
+                <td><input type="button" value="*" onclick="document.forms.result.value+='*'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="document.forms.result.value+='4'"></td>
+                <td><input type="button" value="5" onclick="document.forms.result.value+='5'"></td>
+                <td><input type="button" value="6" onclick="document.forms.result.value+='6'"></td>
+                <td><input type="button" value="-"  onclick="document.forms.result.value+='-'"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="document.forms.result.value+='1'"></td>
+                <td><input type="button" value="2" onclick="document.forms.result.value+='2'"></td>
+                <td><input type="button" value="3" onclick="document.forms.result.value+='3'"></td>
+                <td><input type="button" value="+" onclick="document.forms.result.value+='+'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="+/-" onclick="document.forms.result.value='+'" or onclick="document.forms.result.value='-'"></td>
+                <td><input type="button" value="0" onclick="document.forms.result.value+='0'"></td>
+                <td><input type="button" value="." onclick="document.forms.result.value+='.'"></td>
+                <td><input type="button" value="=" onclick="document.forms.result.value=eval(document.forms.result.value)"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
