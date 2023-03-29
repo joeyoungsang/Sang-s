@@ -1,0 +1,21 @@
+textarea.ta{
+    width: 500px;
+    height: 300px;
+    resize: none;
+}
+h1{
+    text-align: center;
+}
+#head{
+    background-color: yellow;
+}
+#body{
+    background-color: pink
+    
+}
+#footer{
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: plum;
+}

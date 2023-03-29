@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn1{
+            height: 25px;
+            width:  70px;
+            border-radius: 5px;
+            border: 0.6px;
+        }
+        .btn1:hover{
+            background-color: skyblue;
+            color: white;
+        }
+        .btn1:active{
+            background-color: rgb(59, 59, 209);
+        }
+        .btn2{
+            height: 25px;
+            width:  70px;
+            border-radius: 5px;
+            border: 0.6px;
+        }
+        .btn2:hover{
+            background-color: #FF6666;
+            color: white;
+            border: 0;
+            border-radius: 5px;
+        }
+        .btn2:active{
+            border: 2px solid rgb(236, 57, 57);
+            background-color: #f04141;
+
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            <label>로그인</label>
+        </legend>
+        <table>
+            <tr>
+                <td>아 이 디</td>
+                <td colspan="3"><input type="email"></td>
+                <td><input type="submit" class="btn1" value="로그인"></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td colspan="3"><input type="password"></td>
+                <td><input type="reset" class="btn2" value="취 소"></td>
+            </tr>
+    </fieldset>
+</body>
+</html>

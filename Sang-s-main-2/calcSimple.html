@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(){
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var op = document.getElementById("op").value;
+            var res;
+
+        if(op == "+"){
+            res = num1+num2;
+        }else if(op == "-"){
+             res = num1-num2;
+        }else if(op == "×"){
+            res = num1*num2;
+        }else if(op == "÷"){
+            res = num1/num2;
+        }
+        document.getElementById("res").value = res;
+        }
+
+        function reset(){
+            document.getElementById("num1").value = "";
+            document.getElementById("num2").value = "";
+            document.getElementById("op").value = "";
+            document.getElementById("res").value = "";
+        }
+    </script>
+</head>
+<body>
+    <h3>간단한 사칙연산 계산기</h3>
+    <input type="text" id="num1" placeholder="첫번째 수 입력">
+    <select id="op">
+        <option>+</option>
+        <option>-</option>
+        <option>×</option>
+        <option>÷</option>
+    </select>
+    <!-- <input type="text" id="op"> -->
+    <input type="text" id="num2" placeholder="두번째 수 입력">
+    =
+    <input type="text" id="res" placeholder="계산 결과 출력">
+    <input type="button" value="계산" onclick="cal()">
+    <input type="button" value="취소"onclick="reset()">
+    
+</body>
+</html>
