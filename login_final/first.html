@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function notopen() {
+            alert("서비스 준비중 입니다");
+        }
+    </script>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        .div1{
+            margin-top: 5%;
+            left: 40%;
+            width: 400px;
+            height: 600px;
+            border: 2px solid lightgray;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 5px 5px 4px 2px rgb(136, 136, 136);
+            text-align: center;
+        }
+        #logbt{
+            background-color: black;
+            color: white;
+            width: 380px;
+            height: 50px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 1000;
+            font-size: 17px;
+           
+            
+        }
+        .inp1{
+            margin-left: 13px;
+        }
+        #autologin{
+            margin-left: -20px; 
+        }
+        #autologin_size{
+            font-size: smaller;
+        }
+        hr{
+            border: none;
+            border-top:1px solid lightgrey;
+            text-align: center;
+            overflow: visible;
+            margin: 20px;
+            
+        }
+        hr::after{
+            content: "또는";
+            position: relative;
+            top: -13px;
+            background-color: white;
+            padding: 0 10px;
+            
+        }
+
+        .acc {
+            width: 300px;
+            height: 45px;
+            line-height: 45px;
+            border: 1px solid lightgray;
+            display: inline-block;
+            font-weight: 1000;
+            cursor: pointer;
+            
+        }
+        #nav{
+            background: rgb(3, 199, 90);
+            color: white;
+        }
+        #kaka{
+            background: #FEE500;
+        }
+        #app{
+
+            background: black;
+            color: white;
+        }
+        span{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1>로그인</h1>
+        <form>
+            아이디 <input class="inp1" type="text" placeholder="email@mycompany.com"><br><br>
+            비밀번호 <input type="text">
+        </form>
+        <form>
+            <input id="autologin" type="checkbox" value="자동 로그인"><span id="autologin_size">자동 로그인</span>
+            <input id="logbt" type="button" value="로그인" onclick="notopen()">
+        </form>
+        <span onclick="notopen()">회원가입 |</span>
+        <span onclick="notopen()">아이디찾기 |</span>
+        <span onclick="notopen()">비밀번호 찾기</span>
+        <hr>
+        <div class="acc" id="nav" onclick="notopen()">네이버 로그인</div>
+        <div class="acc" id="goo" onclick="notopen()">구글 로그인</div>
+        <div class="acc" id="kaka" onclick="notopen()">카카오 로그인</div>
+        <div class="acc" id="app" onclick="notopen()">애플 로그인</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+  color: #50bcdf;
+  text-decoration: none;
+  font-family: ‘Noto Sans Kr’ ’sans-serif’;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  background-color: white;
+  height: auto;
+}
+body {
+  overflow: hidden;
+}
+fieldset {
+  border: none;
+  margin: 0;
+  width: 20%;
+  height: auto;
+}
+#box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  height: 100vh;
+}
+input {
+  color: black;
+  border: 2px solid #50bcdf;
+  height: 20%;
+  box-sizing: border-box;
+}
+span {
+  width: auto;
+}
+#regist {
+  float: left;
+}
+#findIP {
+  float: right;
+}
+#Naver {
+  color: #00c73c;
+  border: 2px solid #00c73c;
+}
+#Google {
+  color: #ea4335;
+  border: 2px solid #ea4335;
+}
+#hide {
+  display: none;
+  visibility: hidden;
+}

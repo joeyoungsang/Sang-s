@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url(login_2_style.css);
+    </style>
+  </head>
+  <body onload="document.getElementById('id').focus();">
+    <div id="box">
+      <fieldset>
+        <table>
+          <form
+            action="login_success.html"
+            id="enterK"
+            method="get"
+            onsubmit="return checkAll()"
+          >
+            <img src="logo.png" />
+            <div>
+              <input
+                type="text"
+                id="id"
+                placeholder="Email"
+                onblur="checkID(this)"
+              />
+              <p></p>
+              <input
+                type="password"
+                id="pw"
+                placeholder="PassWord"
+                onblur="checkPW(this)"
+              />
+            </div>
+            <button id="hide" type="submit"></button>
+            <div>
+              <br />
+              <a href=""><span id="regist">회원가입</span></a
+              ><a href=""><span id="findIP">ID | PW 찾기</span></a>
+            </div>
+          </form>
+        </table>
+        <p></p>
+        <table>
+          <div>
+            <a href="https://www.naver.com"
+              ><button id="Naver">Naver 연동</button></a
+            >
+            <p></p>
+            <a href="https://www.Google.com"
+              ><button id="Google">Google 연동</button></a
+            >
+            <p></p>
+            <img id="qrcode" src="qrcode.png" />
+          </div>
+        </table>
+      </fieldset>
+    </div>
+    <script src="login_2.js"></script>
+  </body>
+</html>
