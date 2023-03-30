@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <head>
+<style>
+@import url("login_style.css");
+</style>
+  </head>
+  <body onload="document.getElementById('id').focus();">
+<div id="flex-box">
+    <fieldset>
+<!-- Header -->
+      <header>로그인</header>
+     <table>
+      <!-- Body -->
+      <form action="login_success.html" method="get" id="myForm" onsubmit="return validateLoginForm()">
+          <div>
+            <input 
+            type="text" 
+            id="id" 
+            placeholder="ID를 입력해주세요." 
+            onblur="checkFields(this)"
+            >
+            <p></p>
+            <input 
+            type="password" 
+            id="pw" 
+            placeholder="PW를 입력해주세요." 
+            onblur="checkFields(this)"
+            >
+          </div>
+          <p id="error"></p>
+            <div>
+              <input type="checkbox" id="checkbox" value="autoLogin">자동로그인
+            </div>
+          <div>
+            <button type="submit" id="box" onclick="validateLoginForm()">LOGIN
+</div>
+</form>
+  </table>
+    <hr>
+<!-- Footer -->
+    <footer>
+      <span>혹시 계정이 없으시다면...</span>
+    <input type="button" value="SIGN UP" id="box">
+    <table>
+    <tr><td><input type="button" value="ID/PW 찾기" id="box"></td></tr>
+    <tr><td><a href='https://accounts.google.com/'><button id="b1">Google 연동</a></td></tr>
+    <tr><td><a href='https://www.naver.com/'><button id="b2">Naver 연동</a></td></tr>
+    </table></footer>
+    </fieldset> 
+  </div>
+  <script src="login_function.js"></script>
+  </body>
+</html>
